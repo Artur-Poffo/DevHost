@@ -224,6 +224,10 @@ a {
 
 /* Media section */
 @media (max-width: 1560px) {
+    #home {
+        background-attachment: scroll;
+    }
+
     #home h1 {
         font-size: 1.5rem;
     }
