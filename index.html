@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevHost</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="menu-mobile">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <ul class="mobile-list">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Produtos</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+
+    <nav class="navbar">
+      <a href="#">
+        <h2>
+          <span class="spanred"><</span>Dev<span class="spanred">Host /></span>
+        </h2>
+      </a>
+      <ul class="listnav">
+        <li><a class="activelink" id="nav1" href="#home">Home</a></li>
+        <li><a id="nav2" href="#sobre">Sobre</a></li>
+        <li><a id="nav3" href="#">Produtos</a></li>
+        <li><a id="nav4" href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="left" data-aos="fade-down" data-aos-duration="1000">
+      <h1 class="title title-animate">
+        <span class="spanred"><</span>Dev<span class="spanred">Host /></span>
+      </h1>
+      <p>
+        <span class="spanred">{</span> Uma empresa nova no mercado com a
+        intenção de facilitar<br />a vida de muitas pequenas empresas que
+        queiram alavancar seus negócios através da tecnologia
+        <span class="spanred">}</span>
+      </p>
+      <a href="#contato"><button class="default-btn">Contato</button></a>
+    </div>
+
+    <div class="right">
+      <div class="circle-home" data-aos="fade-left" data-aos-duration="1000">
+        <div class="inputs-home">
+          <input onclick="slide()" checked type="radio" name="radio" id="radio1" />
+          <label for="radio1"></label>
+          <input onclick="slide()" type="radio" name="radio" id="radio2" />
+          <label for="radio2"></label>
+          <input onclick="slide()" type="radio" name="radio" id="radio3" />
+          <label for="radio3"></label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <h2 onchange="add()"  data-aos="fade-right" class="title">Sobre a empresa:</h2>
+    
+    <div class="sobre-container">
+        
+        <img data-aos="fade-right" data-aos-duration="1000" class="sobre-img" src="./assets/sobre.svg" alt="">
+
+
+        <div class="info-sobre" data-aos="fade-down" data-aos-duration="1000">
+          <h3> < DevHost /> </h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur sit sapiente ad alias ratione ullam unde perferendis nemo voluptatum minus, id saepe repudiandae eligendi, at doloremque esse omnis assumenda ipsam!</p>
+          <a href="#contato"><button class="default-btn">Contato</button></a>
+        </div>
+
+    </div>
+
+  </section>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    function add() {
+      document.getElementsByClassName('title')[1].classList.add('title-animate')
+    }
+  </script>
+</body>
+
+</html>
