@@ -33,6 +33,11 @@ html {
     position: fixed;
     z-index: 2;
     overflow: hidden;
+    transition: all 1s ease;
+}
+
+.hidden {
+    margin-left: 100%;
 }
 
 a {
@@ -98,6 +103,25 @@ a {
 #home h1 {
     font-size: 3rem;
     color: white;
+}
+
+.title-animate {
+    position: relative;
+    display: inline-block;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: frames 6s steps(1150) both;
+}
+
+.title-animate::after {
+    content: '';
+    position: absolute;
+    margin-left: 10px;
+    width: 2px;
+    height: 100%;
+    background-color: crimson;
+    animation: pisca 1s infinite;
 }
 
 #home p {
@@ -180,26 +204,6 @@ a {
     
 }
 
-.title-animate {
-    position: relative;
-    display: inline-block;
-    width: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: frames 5s steps(1150) both;
-}
-
-.title-animate::after {
-    content: '';
-    position: absolute;
-    margin-left: 10px;
-    width: 2px;
-    height: 100%;
-    background-color: crimson;
-    animation: pisca 1s infinite;
-
-}
-
 .sobre-container {
     display: flex;
     align-items: center;
@@ -227,7 +231,7 @@ a {
     #home {
         background-attachment: scroll;
     }
-
+    
     #home h1 {
         font-size: 1.5rem;
     }

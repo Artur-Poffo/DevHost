@@ -38,3 +38,21 @@ function removemenu() {
   mobilelist.classList.remove('open')
 }
 //fim fechar menu
+
+//ocultar menu no scroll
+let nav = document.getElementsByClassName('navbar')[0]
+let ultimaposiçao = 0
+
+
+document.addEventListener('scroll', () => {
+  let atualposiçao = window.scrollY
+
+  if(atualposiçao > ultimaposiçao) {
+    nav.classList.add('hidden')
+  } else {
+    nav.classList.remove('hidden')
+  }
+
+  ultimaposiçao = atualposiçao
+})
+//fim ocultar menu no scroll
