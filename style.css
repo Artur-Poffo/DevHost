@@ -226,7 +226,7 @@ a {
 }
 
 #objetivo {
-    background-color: bisque;
+    background-color: blanchedalmond;
 }
 
 .objetivos-container {
@@ -382,6 +382,14 @@ a {
 
     .sobre-img {
         width: 20rem;
+    }
+
+    .title {
+        margin: 5px;
+    }
+
+    .hidden {
+        margin: 0;
     }
 }
 
