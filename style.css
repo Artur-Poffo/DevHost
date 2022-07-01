@@ -269,8 +269,56 @@ a {
     background-color: crimson;
 }
 
+#especialidades {
+    background-color: #272727;
+}
+
+.especontainer {
+    width: 100%;
+    height: 100%;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ .info ul {
+    width: 40%;
+}
+
+.listespe {
+    width: 40%;
+    height: 6.5em;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #313131;
+    color: white;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 1.5s ease;
+}
+
+.listespe:hover {
+    background-color: crimson;
+}
+
+.espe-img {
+    margin-top: 100px;
+    width: 700px;
+}
+
 /* Media section */
 @media (max-width: 1560px) {
+    .navlink {
+        margin: 9px;
+    }
+    
     #home {
         background-attachment: scroll;
     }
@@ -299,6 +347,26 @@ a {
         height: 10rem;
         margin: 20px 0;
     }
+
+    .espe-img {
+        margin-top: 10px;
+        width: 22rem;
+        margin-bottom: 20px;
+    }
+
+    .info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 600px) {
@@ -315,11 +383,10 @@ a {
         height: 40px;
         border-radius: 50%;
         cursor: pointer;
-        transition: all 1s ease;
     }
 
-    .menu-mobile:hover {
-        transform: rotate(360deg);
+    .change {
+        animation: menu-rotate 1s ease;
     }
 
     .bar {
@@ -381,6 +448,7 @@ a {
     }
 
     .sobre-img {
+        margin: 0;
         width: 20rem;
     }
 
@@ -391,6 +459,11 @@ a {
     .hidden {
         margin: 0;
     }
+
+    .listespe {
+        width: 80vw;
+    }
+
 }
 
 /* KeyFrames section: */
@@ -407,6 +480,12 @@ a {
 @keyframes frames {
     100% {
         width: 100%;
+    }
+}
+
+@keyframes menu-rotate {
+    100% {
+        transform: rotate(360deg);
     }
 }
 
