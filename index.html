@@ -19,7 +19,7 @@
       <li><a onclick="removemenu()" class="navlink" href="#sobre">Sobre</a></li>
       <li><a onclick="removemenu()" class="navlink" href="#objetivo">Objetivos</a></li>
       <li><a onclick="removemenu()" class="navlink" href="#especialidades">Especialidades</a></li>
-      <li><a onclick="removemenu()" class="navlink" href="#">Contato</a></li>
+      <li><a onclick="removemenu()" class="navlink" href="#contato">Contato</a></li>
     </ul>
 
     <nav class="navbar">
@@ -33,7 +33,7 @@
         <li><a id="nav2" class="navlink" href="#sobre">Sobre</a></li>
         <li><a id="nav3" class="navlink" href="#objetivo">Objetivos</a></li>
         <li><a id="nav4" class="navlink" href="#especialidades">Especialidades</a></li>
-        <li><a id="nav5" class="navlink" href="#">Contato</a></li>
+        <li><a id="nav5" class="navlink" href="#contato">Contato</a></li>
       </ul>
       <div class="menu-mobile">
         <div class="bar" id="bar1"></div>
@@ -130,6 +130,31 @@
           <li data-aos="fade-right" class="listespe">Conhecimentos básicos em React.js</li>
           <li data-aos="fade-right" class="listespe">No futuro estaremos desenvolvendo para Back-End também.</li>
         </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h1 data-aos="fade-right" class="title">Contato:</h1>
+
+    <div class="contato-container">
+      <div class="form-contato">
+        <form action="https://api.staticforms.xyz/submit" method="post" class="form" data-aos="fade-down" data-aos-duration="800">
+          <input type="hidden" name="accessKey" value="0aef6eff-643e-4dfe-9f58-fb74c60f702f">
+          <input type="hidden" name="redirectTo" value="artur-poffo.github.io/DevHost/#contato">
+          
+          <h2>Entre Em Contato:</h2>
+
+          <div class="textfield">
+            <label for="nome">Nome:</label>
+            <input name="name" required type="text" id="nome" placeholder="José Pereira">
+            <label for="email">E-mail:</label>
+            <input name="email" required type="email" id="email" placeholder="você@gmail.com">
+            <label for="mensagem">Mensagem:</label>
+            <textarea name="message" required id="mensagem" cols="30" rows="10" placeholder="Escreva sua mensagem aqui..."></textarea>
+            <input class="default-btn" type="submit" value="Enviar">
+          </div>
+        </form>
       </div>
     </div>
   </section>

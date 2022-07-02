@@ -143,6 +143,7 @@ a {
     border-radius: 20px;
     cursor: pointer;
     margin-top: 20px;
+    overflow: hidden;
     transition: all .5s ease;
 }
 
@@ -309,8 +310,58 @@ a {
 }
 
 .espe-img {
-    margin-top: 100px;
+    margin: 100px;
     width: 700px;
+}
+
+#contato {
+    background-color: #313131;
+}
+
+.contato-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 25rem;
+    height: 35rem;
+    background-color: #272727;
+    padding: 20px;
+    margin-bottom: 50px; 
+    overflow: hidden;
+}
+
+.form h2 {
+    color: #eee;
+    margin-bottom: 10px;
+}
+
+.textfield {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.textfield label {
+    color: #eee;
+}
+
+.textfield input, textarea {
+    width: 80%;
+    margin-bottom: 2px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.textfield textarea {
+    width: 100%;
 }
 
 /* Media section */
@@ -464,7 +515,13 @@ a {
         width: 80vw;
     }
 
+    .form {
+        width: 20rem;
+        height: 35rem;
+    }
+
 }
+/* End Media Section */
 
 /* KeyFrames section: */
 @keyframes pisca {
@@ -488,5 +545,4 @@ a {
         transform: rotate(360deg);
     }
 }
-
 /* End KeyFrames section */
