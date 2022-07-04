@@ -5,18 +5,21 @@ let radio2 = document.getElementById("radio2");
 let radio3 = document.getElementById("radio3");
 let circle = document.getElementsByClassName('circle-home')[0]
 
+setInterval(slide, 2000)
+
 function slide() {
+
   if (radio1.checked) {
-    circle.style.backgroundImage = "url(./assets/home1.svg)"
-  }
-
-  if (radio2.checked) {
     circle.style.backgroundImage = "url(./assets/home2.svg)"
+    radio2.checked = 'checked'
+  } else if (radio2.checked) {
+    circle.style.backgroundImage = "url(./assets/home3.svg)"
+    radio3.checked = 'checked'
+  } else if (radio3.checked) {
+    circle.style.backgroundImage = "url(./assets/home1.svg)"
+    radio1.checked = 'checked'
   }
 
-  if (radio3.checked) {
-    circle.style.backgroundImage = "url(./assets/home3.svg)"
-  }
 }
 //fim slide
 
@@ -54,5 +57,7 @@ document.addEventListener('scroll', () => {
   }
 
   ultimaposiçao = atualposiçao
+
 })
+
 //fim ocultar menu no scroll
